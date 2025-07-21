@@ -1,22 +1,62 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+                     /* general */
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
+body{
+    font-family: 'roboto', 'open sans', monospace,sans-serif;
+    min-height: 100%;
+}
+.container{
+    width: 80%;
+    margin: auto;
+}
+                             /* header   */
 #main-header{
     background-color: #1f2937;
+}
+.logo-link{height: 3%;
+    display: flex;
+    justify-content: space-between;
 }
 #main-header h1{
     font-size: 24px;
     color: #f9faf8;
 }
+#main-header ul{
+    list-style: none;
+    gap: 20px;
+}
+.nav-list{
+    display: flex;
+
+}
 .nav-list a{
+    text-decoration: none;
     font-size: 18px;
     color: #e5e7eb;
 }
+                        /* hero section */
 .showcase{
     background-color: #1f2937;
+    height: 23%;
+}
+.hero{
+    height: 400px;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+.hero img{
+    width:600px;
+    height:200px;
+}
+.hero-text{width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 .showcase h2{
     font-size: 48px;
@@ -29,22 +69,86 @@
 }
 .btn{
     background-color: #3882f6;
+    width: 100px;
+    height:30px;
+    font-weight: 600;
+    border-radius: 10px;
+    color:#fff;
+    border-color: #3882f6;
 }
+                    /* main section */                  
 .main h2{
     font-size: 36px;
     color: #1f2937;
     font-weight: 900;
+    margin: 1rem;
 }
+.main .container{
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    
+}
+.boxes{
+    display: flex;
+    gap: 30px;
+}
+.boxes div{
+    max-width: 166px;
+}
+img{
+    border-radius: 10px;
+    border-color: #3882f6;
+}
+                    /* quote section */
 .quote{
     background-color: #e5e7eb;
     font-size: 36px;
     font-style:italic;
-    font-weight: 100;
+    font-weight: 300;
     color: #1f2937;
 }
-.cta{
-    background-color: #3882f6;
+.quote .container{
+    height: 400px;
+    width: 750px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
+.quote .container p:nth-of-type(2){
+    font-weight: 800;
+    font-size: 1.3rem;
+    align-self: flex-end;
+}
+.cta{
+    display: flex;
+    color: #fff;
+   height: 400px;
+}
+.cta .container{
+    width: 800px;
+    padding: 1rem;
+    border-radius: 10px;
+    background-color: #3882f6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+}
+.cta button{
+    border-color: #fff;
+}
+.cta p{
+    color: #e1d9d1fd;
+}
+                    /* footer section */
 #footer{
     background-color:#1f2937 ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    
 }
