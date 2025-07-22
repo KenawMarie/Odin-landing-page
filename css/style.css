@@ -75,6 +75,7 @@ body{
     border-radius: 10px;
     color:#fff;
     border-color: #3882f6;
+    margin-top:0.5rem;
 }
                     /* main section */                  
 .main h2{
@@ -125,7 +126,7 @@ img{
 .cta{
     display: flex;
     color: #fff;
-   height: 400px;
+   height: 300px;
 }
 .cta .container{
     width: 800px;
